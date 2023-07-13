@@ -161,8 +161,8 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
 #  isPlainText = true
 #  isHTML = false
 #
-#[outputs]
-#  home = ["HTML", "RSS"]
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 #  page = ["HTML", "MarkDown"]
 #  section = ["HTML", "RSS"]
 #  taxonomy = ["HTML", "RSS"]
