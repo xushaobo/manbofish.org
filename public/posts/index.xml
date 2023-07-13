@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Manbofish</title>
+    <link>http://blog.morechina.com/posts/</link>
+    <description>Recent content in Posts on Manbofish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="http://blog.morechina.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://blog.morechina.com/posts/00-posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.morechina.com/posts/00-posts/</guid>
+      <description>2018 DONE维特根斯坦的《战时笔记》 @阅读note维特根斯坦哲学思考 这本书是维特根斯坦在 1914年 至 1917年 一战期间当兵时所写的笔记。这份笔</description>
+    </item>
+    
+  </channel>
+</rss>
