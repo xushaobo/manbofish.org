@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>博客写作流程之工具篇： emacs, orgmode, hugo &amp; ox-hugo - Manbofish</title>
-  
+<html
+  lang="zh-cn"
+  itemscope
+  itemtype="http://schema.org/WebPage"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+          博客写作流程之工具篇： emacs, orgmode, hugo &amp; ox-hugo - Manbofish
+        </title>
+    
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
@@ -43,6 +49,10 @@
 
 
 <link rel="icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> 
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
+<link rel="manifest" href="/manifest.json"> 
 
 
 
@@ -50,11 +60,7 @@
 
 
 
-
-
-
-
-<link rel="stylesheet" href="/sass/jane.min.6aa088348d86326ca4be4205ae9973752a42b2e758c2f5f879a69172441859c9.css" integrity="sha256-aqCINI2GMmykvkIFrplzdSpCsudYwvX4eaaRckQYWck=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="sha256-2Nh7mCmTp0Xl57amy/JXvow&#43;gqq15IXwkIrX5sNQGrI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -109,9 +115,11 @@ easy-hygo : https://github.com/masasam/emacs-easy-hugo
 
 
 
-</head>
-<body>
-  <div id="mobile-navbar" class="mobile-navbar">
+  </head>
+  <body>
+    <div id="back-to-top"></div>
+
+    <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
     <a href="/" class="logo">Manbofish</a>
   </div>
@@ -180,8 +188,8 @@ easy-hygo : https://github.com/masasam/emacs-easy-hugo
 </nav>
 
 
-  
     
+      
 
 
 
@@ -238,14 +246,15 @@ easy-hygo : https://github.com/masasam/emacs-easy-hugo
     </div>
 </div>
 
-  
+    
 
-  
+    
 
-  
+    
 
-  <header id="header" class="header container">
-    <div class="logo-wrapper">
+
+    <header id="header" class="header">
+      <div class="logo-wrapper">
   <a href="/" class="logo">
     
       Manbofish
@@ -350,78 +359,66 @@ easy-hygo : https://github.com/masasam/emacs-easy-hugo
   </ul>
 </nav>
 
-  </header>
-
-  <div id="mobile-panel">
-    <main id="main" class="main bg-llight wallpaper">
-      <div class="content-wrapper">
-        <div id="content" class="content container">
-          <article class="post bg-white">
-    
-    <header class="post-header">
-      <h1 class="post-title">博客写作流程之工具篇： emacs, orgmode, hugo &amp; ox-hugo</h1>
-      
-      <div class="post-meta">
-        <time datetime="2018-03-31" class="post-time">
-          2018-03-31
-        </time>
-        <div class="post-category">
-            <a href="http://blog.morechina.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"> 计算机 </a>
-            
-          </div>
-
-          <span class="more-meta"> 约 1942 字 </span>
-          <span class="more-meta"> 预计阅读 4 分钟 </span>
-
-        
-        
-
-        
-        
-      </div>
     </header>
 
+    <div id="mobile-panel">
+      <main id="main" class="main bg-llight wallpaper">
+        <div class="content-wrapper">
+    <div id="content" class="content">
+      <article class="post">
+        
+        <header class="post-header">
+          <h1 class="post-title">博客写作流程之工具篇： emacs, orgmode, hugo &amp; ox-hugo</h1>
+          
+
+          <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      <a href="/about">
+        <span class="post-meta-author-name">
+          manbofish
+        </span>
+      </a>
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2018-03-31">
+      2018-03-31
+    </time>
+  </div>
+
+  
+    <div class="post-meta-lastmod">
+      (上次更新:
+      2023-07-13)
+    </div>
+  
+
+
+  <div class="post-meta__right">
+    
+
+    <div class="post-meta-category">
+        <a href="http://blog.morechina.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"> 计算机 </a>
+          
+      </div>
+
+
     
     
-<div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
-  <div class="post-toc-content">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#自问自答">自问自答</a>
-      <ul>
-        <li><a href="#问-为什么写这篇文章">问： 为什么写这篇文章？</a></li>
-        <li><a href="#问-这篇文章主要解决什么问题">问： 这篇文章主要解决什么问题？</a></li>
-        <li><a href="#问-为什么用-emacs-和-orgmode">问： 为什么用 emacs 和 orgmode ？</a></li>
-        <li><a href="#问-为什么用-hugo">问： 为什么用 hugo ？</a></li>
-      </ul>
-    </li>
-    <li><a href="#发布博文的一般流程">发布博文的一般流程</a></li>
-    <li><a href="#创建博文">创建博文</a>
-      <ul>
-        <li><a href="#使用-org-capture-创建博文">使用 org-capture 创建博文</a></li>
-        <li><a href="#使用-yasnippet-创建博文">使用 YASnippet 创建博文</a></li>
-      </ul>
-    </li>
-    <li><a href="#由-ox-hugo-生成-markdown">由 ox-hugo 生成 markdown</a></li>
-    <li><a href="#使用-easy-hugo-管理你的博客-可选">使用 easy-hugo 管理你的博客（可选）</a></li>
-    <li><a href="#最后的总结">最后的总结</a></li>
-    <li><a href="#附录a-几个辅助写作的-emacs-扩展">附录A：几个辅助写作的 emacs 扩展</a></li>
-    <li><a href="#附录b-快速获取-orgmode-或-markdown-格式的网页标题和链接">附录B：快速获取 orgmode 或 markdown 格式的网页标题和链接</a></li>
-    <li><a href="#附录c-我的-yasnippet-模板">附录C：我的 YASnippet 模板</a>
-      <ul>
-        <li><a href="#hugo-文章信息模板">hugo 文章信息模板</a></li>
-        <li><a href="#more">more</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+
+
+    
+    
   </div>
 </div>
 
-    
-    <div class="post-content">
-      <p>本文将对我个人的博文写作流程 <strong>所用到的工具</strong> 做一个总结与分享。从标题就可以看出来，主要有这几个工具： <code>emacs</code>, <code>orgmode</code> &amp; <code>hugo</code> ，另外还有两个配合 <code>hugo</code> 的辅助包 <code>easy-hugo</code> （可选） &amp; <code>ox-hugo</code> 。</p>
+        </header>
+
+        
+        <div class="post-content">
+          <p>本文将对我个人的博文写作流程 <strong>所用到的工具</strong> 做一个总结与分享。从标题就可以看出来，主要有这几个工具： <code>emacs</code>, <code>orgmode</code> &amp; <code>hugo</code> ，另外还有两个配合 <code>hugo</code> 的辅助包 <code>easy-hugo</code> （可选） &amp; <code>ox-hugo</code> 。</p>
 <ul>
 <li><code>hugo</code> : <a href="https://gohugo.io/">https://gohugo.io/</a></li>
 <li><code>orgmode</code> : <a href="https://orgmode.org/">https://orgmode.org/</a></li>
@@ -650,10 +647,10 @@ $0
 
 $0
 </code></pre><p>有待补充&hellip;</p>
-    </div>
+        </div>
 
-    
-    
+        
+        
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">文章作者</span>
@@ -681,8 +678,9 @@ $0
 </div>
 
 
-    
-    
+
+        
+        
 <div class="post-reward">
   <input type="checkbox" name="reward" id="reward" hidden />
   <label class="reward-button" for="reward">赞赏支持</label>
@@ -697,37 +695,40 @@ $0
   </div>
 </div>
 
-    <footer class="post-footer">
-      <div class="post-tags">
-          <a href="http://blog.morechina.com/tags/emacs/">emacs</a>
-          <a href="http://blog.morechina.com/tags/editor/">editor</a>
-          <a href="http://blog.morechina.com/tags/orgmode/">orgmode</a>
-          <a href="http://blog.morechina.com/tags/hugo/">hugo</a>
-          <a href="http://blog.morechina.com/tags/%E5%86%99%E4%BD%9C/">写作</a>
-          <a href="http://blog.morechina.com/tags/tool/">tool</a>
-          <a href="http://blog.morechina.com/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+
+        <footer class="post-footer">
+          <div class="post-tags">
+              <a href="http://blog.morechina.com/tags/emacs/">emacs</a>
+                <a href="http://blog.morechina.com/tags/editor/">editor</a>
+                <a href="http://blog.morechina.com/tags/orgmode/">orgmode</a>
+                <a href="http://blog.morechina.com/tags/hugo/">hugo</a>
+                <a href="http://blog.morechina.com/tags/%E5%86%99%E4%BD%9C/">写作</a>
+                <a href="http://blog.morechina.com/tags/tool/">tool</a>
+                <a href="http://blog.morechina.com/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+                
+            </div>
+
+
           
-        </div>
+          <nav class="post-nav">
+            
+            
+          </nav>
+        </footer>
+      </article>
 
       
-      <nav class="post-nav">
-        
-        
-      </nav>
-    </footer>
-  </article>
+      
 
-  
-  
 
-  
-  
+      
+      
 
   
 
   
   
-    <div class="post bg-white">
+    <div class="post">
   <script
     src="https://giscus.app/client.js"
     data-repo="xianmin/comments---xianmin.org"
@@ -790,12 +791,53 @@ $0
 
   
 
-        </div>
-      </div>
-    </main>
 
-    <footer id="footer" class="footer">
-      <div class="icon-links">
+    </div>
+
+    
+    <nav class="toc" id="toc">
+    <div class="toc-title">文章目录</div>
+    <div class="toc-content custom-scrollbar">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#自问自答">自问自答</a>
+      <ul>
+        <li><a href="#问-为什么写这篇文章">问： 为什么写这篇文章？</a></li>
+        <li><a href="#问-这篇文章主要解决什么问题">问： 这篇文章主要解决什么问题？</a></li>
+        <li><a href="#问-为什么用-emacs-和-orgmode">问： 为什么用 emacs 和 orgmode ？</a></li>
+        <li><a href="#问-为什么用-hugo">问： 为什么用 hugo ？</a></li>
+      </ul>
+    </li>
+    <li><a href="#发布博文的一般流程">发布博文的一般流程</a></li>
+    <li><a href="#创建博文">创建博文</a>
+      <ul>
+        <li><a href="#使用-org-capture-创建博文">使用 org-capture 创建博文</a></li>
+        <li><a href="#使用-yasnippet-创建博文">使用 YASnippet 创建博文</a></li>
+      </ul>
+    </li>
+    <li><a href="#由-ox-hugo-生成-markdown">由 ox-hugo 生成 markdown</a></li>
+    <li><a href="#使用-easy-hugo-管理你的博客-可选">使用 easy-hugo 管理你的博客（可选）</a></li>
+    <li><a href="#最后的总结">最后的总结</a></li>
+    <li><a href="#附录a-几个辅助写作的-emacs-扩展">附录A：几个辅助写作的 emacs 扩展</a></li>
+    <li><a href="#附录b-快速获取-orgmode-或-markdown-格式的网页标题和链接">附录B：快速获取 orgmode 或 markdown 格式的网页标题和链接</a></li>
+    <li><a href="#附录c-我的-yasnippet-模板">附录C：我的 YASnippet 模板</a>
+      <ul>
+        <li><a href="#hugo-文章信息模板">hugo 文章信息模板</a></li>
+        <li><a href="#more">more</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </nav>
+
+
+  </div>
+
+      </main>
+
+      <footer id="footer" class="footer">
+        <div class="icon-links">
   
   
     <a href="mailto:manbofish@morechina.com.cn" rel="me noopener" class="iconfont"
@@ -856,7 +898,7 @@ $0
     &copy;
     
       2017 -
-    2023
+    2024
     <span class="heart">
       
       <i class="iconfont">
@@ -879,28 +921,30 @@ $0
   
 </div>
 
-    </footer>
+      </footer>
 
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont">
-        
-        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+      <div class="button__back-to-top">
+        <a href="#back-to-top">
+          <i class="iconfont">
+            
+            <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="35" height="35">
   <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
 </svg>
 
-      </i>
+          </i>
+        </a>
+      </div>
     </div>
-  </div>
-  
+    
 <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
 
 
 
 
-<script type="text/javascript" src="/js/main.fe83e11b4fbc9193d67e2c9db78bad21f8dc59fca0cacd8c1c3bb071bb16a852.js" integrity="sha256-/oPhG0&#43;8kZPWfiydt4utIfjcWfygys2MHDuwcbsWqFI=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.0e9f89b12f3d7c13daa5fd56ba55ac2312c0d3aea8f4c51cbc7590297a80a9e5.js" integrity="sha256-Dp&#43;JsS89fBPapf1WulWsIxLA066o9MUcvHWQKXqAqeU=" crossorigin="anonymous"></script>
 
 
 
@@ -914,7 +958,6 @@ $0
 
 
   
-    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
   
@@ -937,5 +980,5 @@ $0
   <script src="/js/custom.js"></script>
 
 
-</body>
+  </body>
 </html>

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>editor · Manbofish</title>
-  
+<html
+  lang="zh-cn"
+  itemscope
+  itemtype="http://schema.org/WebPage"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>editor · Manbofish</title>
+    
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
@@ -41,6 +45,10 @@
 
 
 <link rel="icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> 
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
+<link rel="manifest" href="/manifest.json"> 
 
 
 
@@ -48,11 +56,7 @@
 
 
 
-
-
-
-
-<link rel="stylesheet" href="/sass/jane.min.6aa088348d86326ca4be4205ae9973752a42b2e758c2f5f879a69172441859c9.css" integrity="sha256-aqCINI2GMmykvkIFrplzdSpCsudYwvX4eaaRckQYWck=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="sha256-2Nh7mCmTp0Xl57amy/JXvow&#43;gqq15IXwkIrX5sNQGrI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -84,9 +88,11 @@
 
 
 
-</head>
-<body>
-  <div id="mobile-navbar" class="mobile-navbar">
+  </head>
+  <body>
+    <div id="back-to-top"></div>
+
+    <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
     <a href="/" class="logo">Manbofish</a>
   </div>
@@ -155,8 +161,8 @@
 </nav>
 
 
-  
     
+      
 
 
 
@@ -213,14 +219,15 @@
     </div>
 </div>
 
-  
+    
 
-  
+    
 
-  
+    
 
-  <header id="header" class="header container">
-    <div class="logo-wrapper">
+
+    <header id="header" class="header">
+      <div class="logo-wrapper">
   <a href="/" class="logo">
     
       Manbofish
@@ -325,13 +332,11 @@
   </ul>
 </nav>
 
-  </header>
+    </header>
 
-  <div id="mobile-panel">
-    <main id="main" class="main bg-llight wallpaper">
-      <div class="content-wrapper">
-        <div id="content" class="content container">
-          
+    <div id="mobile-panel">
+      <main id="main" class="main bg-llight wallpaper">
+        
 
 <section id="archive" class="archive">
   
@@ -347,9 +352,6 @@
       <time datetime="2018-03-31" class="archive-post-time">
         2018-03-31
       </time>
-	  <span class="more-meta"> 约 1942 字 </span>
-      <span class="more-meta"> 预计阅读 4 分钟 </span>
-
       <span class="archive-post-title">
         <a href="/post/ox-hugo/" class="archive-post-link">
           博客写作流程之工具篇： emacs, orgmode, hugo &amp; ox-hugo
@@ -384,12 +386,11 @@
 
 
 
-        </div>
-      </div>
-    </main>
 
-    <footer id="footer" class="footer">
-      <div class="icon-links">
+      </main>
+
+      <footer id="footer" class="footer">
+        <div class="icon-links">
   
   
     <a href="mailto:manbofish@morechina.com.cn" rel="me noopener" class="iconfont"
@@ -450,7 +451,7 @@
     &copy;
     
       2017 -
-    2023
+    2024
     <span class="heart">
       
       <i class="iconfont">
@@ -473,28 +474,30 @@
   
 </div>
 
-    </footer>
+      </footer>
 
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont">
-        
-        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+      <div class="button__back-to-top">
+        <a href="#back-to-top">
+          <i class="iconfont">
+            
+            <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="35" height="35">
   <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
 </svg>
 
-      </i>
+          </i>
+        </a>
+      </div>
     </div>
-  </div>
-  
+    
 <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
 
 
 
 
-<script type="text/javascript" src="/js/main.fe83e11b4fbc9193d67e2c9db78bad21f8dc59fca0cacd8c1c3bb071bb16a852.js" integrity="sha256-/oPhG0&#43;8kZPWfiydt4utIfjcWfygys2MHDuwcbsWqFI=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.0e9f89b12f3d7c13daa5fd56ba55ac2312c0d3aea8f4c51cbc7590297a80a9e5.js" integrity="sha256-Dp&#43;JsS89fBPapf1WulWsIxLA066o9MUcvHWQKXqAqeU=" crossorigin="anonymous"></script>
 
 
 
@@ -508,7 +511,6 @@
 
 
   
-    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
   
@@ -531,5 +533,5 @@
   <script src="/js/custom.js"></script>
 
 
-</body>
+  </body>
 </html>
