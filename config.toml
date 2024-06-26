@@ -106,10 +106,10 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
 
   [params.giscus]         # giscus is a comment system based on GitHub Discussions. see https://giscus.app
     enable = true
-    repo = "xianmin/comments---xianmin.org"
-    repoId = "MDEwOlJlcG9zaXRvcnkxNDAyNTY2MDI="
+    repo = "xushaobo/manbofish.org"
+    repoId = "R_kgDOJ7D_Cg"
     category = "Announcements"
-    categoryId = "DIC_kwDOCFwlWs4CRRxW"
+    categoryId = "DIC_kwDOJ7D_Cs4CX4Sy"
     # mapping = "pathname"
     # strict = 0
     # reactionsEnabled = 1
